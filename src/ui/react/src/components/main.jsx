@@ -304,6 +304,8 @@
          * @param {DOMElement} target The DOM element with which user interacted lastly.
          */
         _setUIHidden: function(target) {
+            return; // Avoid toolbar hidden
+
             var domNode = React.findDOMNode(this);
 
             if (domNode) {

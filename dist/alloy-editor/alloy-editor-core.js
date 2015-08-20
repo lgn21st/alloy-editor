@@ -11227,6 +11227,8 @@ CKEDITOR.tools.buildTableMap = function (table) {
          * @param {DOMElement} target The DOM element with which user interacted lastly.
          */
         _setUIHidden: function _setUIHidden(target) {
+            return; // Avoid toolbar hidden
+
             var domNode = React.findDOMNode(this);
 
             if (domNode) {
